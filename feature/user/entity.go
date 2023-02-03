@@ -17,12 +17,15 @@ type Core struct {
 
 type UserHandler interface {
 	RegisterHdl() echo.HandlerFunc
+	LoginHdl() echo.HandlerFunc
 }
 
 type UserService interface {
-	RegisterServ(newUser Core) (Core, error)
+	RegisterSrv(newUser Core) (Core, error)
+	LoginSrv(email, password string) (string, Core, error)
 }
 
 type UserRepository interface {
 	RegisterRepo(newUser Core) (Core, error)
+	LoginRepo(email string) (Core, error)
 }
