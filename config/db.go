@@ -3,6 +3,7 @@ package config
 import (
 	"fmt"
 	"log"
+	userModel "yuhuuuMit/feature/user/repository"
 
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
@@ -25,4 +26,11 @@ func OpenDB(cfg *AppConfig) *gorm.DB {
 		return nil
 	}
 	return db
+}
+
+func GormMigration(db *gorm.DB) {
+	if err := db.AutoMigrate(userModel.User{}); err != nil {
+		log.Fatal(err)
+		return
+	}
 }
