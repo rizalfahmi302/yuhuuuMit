@@ -2,8 +2,8 @@ package helper
 
 import (
 	"log"
+	"syedara/config"
 	"time"
-	"yuhuuuMit/config"
 
 	"github.com/golang-jwt/jwt"
 )

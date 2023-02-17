@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"yuhuuuMit/feature/user"
+	"syedara/feature/user"
 
 	"gorm.io/gorm"
 )

@@ -2,10 +2,10 @@ package main
 
 import (
 	"log"
-	"yuhuuuMit/config"
-	userHandler "yuhuuuMit/feature/user/handler"
-	userRepository "yuhuuuMit/feature/user/repository"
-	userService "yuhuuuMit/feature/user/service"
+	"syedara/config"
+	userHandler "syedara/feature/user/handler"
+	userRepository "syedara/feature/user/repository"
+	userService "syedara/feature/user/service"
 
 	"github.com/go-playground/validator/v10"
 	"github.com/labstack/echo/v4"

@@ -3,7 +3,7 @@ package config
 import (
 	"fmt"
 	"log"
-	userModel "yuhuuuMit/feature/user/repository"
+	userModel "syedara/feature/user/repository"
 
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"

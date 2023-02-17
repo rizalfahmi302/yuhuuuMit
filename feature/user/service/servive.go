@@ -3,8 +3,8 @@ package service
 import (
 	"errors"
 	"log"
-	"yuhuuuMit/feature/user"
-	h "yuhuuuMit/helper"
+	"syedara/feature/user"
+	h "syedara/helper"
 
 	"github.com/go-playground/validator/v10"
 )
@@ -51,7 +51,7 @@ func (us *userService) LoginSrv(email, password string) (string, user.Core, erro
 	} else if password == "" {
 		return "", user.Core{}, errors.New("Password cannot be empty")
 	}
-	
+
 	res, err := us.qry.LoginRepo(email)
 	if err != nil {
 		log.Println("error service ~", err)

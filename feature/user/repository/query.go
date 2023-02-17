@@ -2,7 +2,7 @@ package repository
 
 import (
 	"log"
-	"yuhuuuMit/feature/user"
+	"syedara/feature/user"
 
 	"gorm.io/gorm"
 )
@@ -12,7 +12,7 @@ type userQuery struct {
 }
 
 func New(db *gorm.DB) user.UserRepository {
-	return &userQuery {
+	return &userQuery{
 		db: db,
 	}
 }

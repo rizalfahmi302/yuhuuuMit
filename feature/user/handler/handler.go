@@ -3,8 +3,8 @@ package handler
 import (
 	"log"
 	"net/http"
-	"yuhuuuMit/feature/user"
-	h "yuhuuuMit/helper"
+	"syedara/feature/user"
+	h "syedara/helper"
 
 	"github.com/jinzhu/copier"
 	"github.com/labstack/echo/v4"
